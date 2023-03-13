@@ -9,15 +9,15 @@ import std.string;
 void main() {
     "Enter the size of the Fizz-Buzz array: ".writeln;
     int len = readln().strip.to!int;
-		assert(len > 0, "The size must be positive");
+    assert(len > 0, "The size must be positive");
     "Enter the multiple for 'Fizz': ".writeln;
     int multiple1 = readln().strip.to!int;
-		assert(multiple1 > 0, "'Fizz' must be positive");
+    assert(multiple1 > 0, "'Fizz' must be positive");
     "Enter the multiple for 'Buzz': ".writeln;
     int multiple2 = readln().strip.to!int;
-		assert(multiple2 > 0, "'Buzz' must be positive");
-		string[] result = fizzbuzz(len, multiple1, multiple2);
-		result.writeln;
+    assert(multiple2 > 0, "'Buzz' must be positive");
+    string[] result = fizzbuzz(len, multiple1, multiple2);
+    result.writeln;
 }
 
 string[] fizzbuzz(int n, int a, int b) {
